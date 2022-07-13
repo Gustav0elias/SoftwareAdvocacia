@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="relatorioScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="778.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.telaRelatorioController">
+   <children>
+      <TableView fx:id="tabelaProcessos" layoutX="-1.0" layoutY="153.0" prefHeight="439.0" prefWidth="1170.0">
+        <columns>
+            <TableColumn fx:id="colAbertura" prefWidth="102.0" text="Abertura" />
+            <TableColumn fx:id="colResponsavel" prefWidth="121.0" text="Responsável" />
+          <TableColumn fx:id="colCodigo" prefWidth="89.0" text="Código" />
+          <TableColumn fx:id="colNome" prefWidth="194.0" text="Nome" />
+            <TableColumn fx:id="colCpf" prefWidth="197.0" text="CPF" />
+            <TableColumn fx:id="colIdade" prefWidth="137.0" text="Idade" />
+            <TableColumn fx:id="colData" prefWidth="178.0" text="Data">
+               <columns>
+                  <TableColumn fx:id="colDia" prefWidth="42.0" text="Dia" />
+                  <TableColumn fx:id="colMes" prefWidth="99.0" text="Mês" />
+                  <TableColumn fx:id="colAno" prefWidth="84.0" text="Ano" />
+               </columns></TableColumn>
+            <TableColumn minWidth="0.0" prefWidth="0.0" text="Column X" />
+            <TableColumn fx:id="colNvara" prefWidth="75.0" text="N° da vara" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER" layoutX="-2.0" layoutY="671.0" prefHeight="119.0" prefWidth="1170.0">
+         <children>
+            <Button fx:id="botaoCancelar" mnemonicParsing="false" onAction="#cancelar" prefHeight="39.0" prefWidth="125.0" style="-fx-background-color: #B22222;" text="Voltar" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <AnchorPane layoutY="-37.0" prefHeight="191.0" prefWidth="1170.0" style="-fx-background-color: #B22222;">
+         <children>
+            <Label layoutX="406.0" layoutY="101.0" text="Relatório de Processos" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="31.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="759.0" layoutY="108.0">
+               <image>
+                  <Image url="@../../../../Downloads/relatorio.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
